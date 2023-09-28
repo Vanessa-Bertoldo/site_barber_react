@@ -4,7 +4,7 @@ import "./header.css";
 
 export default function Header(){
     return(
-      <header id="header" class="fixed-top ">
+      <header id="header" class="fixed-top back">
       <div class="container d-flex align-items-center justify-content-lg-between">
   
         <h1 class="logo me-auto me-lg-0"><a href="index.html">Barber<span>.</span></a></h1>

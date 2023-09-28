@@ -12,6 +12,9 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+ .back{
+  background-color: #1313138a !important;
+} 
   .order-lg-0 {
     order: 0 !important;
   }
