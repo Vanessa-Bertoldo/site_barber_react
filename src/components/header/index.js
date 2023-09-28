@@ -3,6 +3,7 @@ import "./header.css";
 
 
 export default function Header(){
+  const [menuSection, setMenuSection] = React.useState(false);
   
   React.useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
@@ -22,6 +23,13 @@ export default function Header(){
             activeLink.classList.add("active");
           }
         }
+        if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+          if (currentId !== "hero") {
+            setMenuSection(true);
+          } else {
+            setMenuSection(false);
+          }
+        }
       });
     }
 
@@ -33,7 +41,7 @@ export default function Header(){
 
 
     return(
-      <header id="header" class="fixed-top back">
+      <header id="header" className={`fixed-top ${menuSection ? "backTrue" : "back"}`}>
       <div class="container d-flex align-items-center justify-content-lg-between">
   
         <h1 class="logo me-auto me-lg-0"><a href="index.html">B<span>.</span>M<span>.</span></a></h1>
@@ -43,8 +51,7 @@ export default function Header(){
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">Sobre</a></li>
             <li><a class="nav-link scrollto" href="#services">Serviços</a></li>
-            <li><a class="nav-link scrollto " href="#portfolio">Instagram</a></li>
-            <li><a class="nav-link scrollto" href="#team">Time</a></li>
+            {/*<li><a class="nav-link scrollto" href="#team">Time</a></li>
             <li class="dropdown"><a href="#"><span>Já é cliente?</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 <li><a href="#">Ainda não, mas quero fazer um orçamento</a></li>
@@ -56,12 +63,12 @@ export default function Header(){
                   </ul>
                 </li>
               </ul>
-            </li>
+            </li>*/}
             <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
-        <a href="#about" class="get-started-btn scrollto margin30">Entrar em Contato</a>
+        <a href="#contact" class="get-started-btn scrollto margin30">Entrar em Contato</a>
       </div>
     </header>
     )

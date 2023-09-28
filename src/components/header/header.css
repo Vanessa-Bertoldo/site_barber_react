@@ -15,6 +15,9 @@ body {
  .back{
   background-color: #1313138a !important;
 } 
+.backTrue{
+  background-color: #131313 !important;
+}
   .order-lg-0 {
     order: 0 !important;
   }

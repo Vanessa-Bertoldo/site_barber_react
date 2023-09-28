@@ -3,16 +3,21 @@ import Header from "./components/header";
 import Banner from "./components/banner";
 import "./App.css";
 import Section from "./components/sections";
+import Footer from "./components/footer";
 
 function App() {
   return (
-    <body>
-      <Header/>
-      <Banner/>
-      <main>
-        <Section/>
-      </main>
+    <html>
+      <body>
+        <Header/>
+        <Banner/>
+        <main>
+          <Section/>
+        </main>
+        <Footer/>
     </body>
+    </html>
+   
   );
 }
 
