@@ -3,6 +3,35 @@ import "./header.css";
 
 
 export default function Header(){
+  
+  React.useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+
+    function onScroll() {
+      const scrollPosition = window.scrollY;
+
+      sections.forEach((section) => {
+        const currentId = section.getAttribute("id");
+        const offsetTop = section.offsetTop - 150;
+        const offsetBottom = offsetTop + section.offsetHeight;
+
+        if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+          const activeLink = document.querySelector(`nav a[href="#${currentId}"]`);
+          if (activeLink) {
+            document.querySelectorAll("nav a").forEach((link) => link.classList.remove("active"));
+            activeLink.classList.add("active");
+          }
+        }
+      });
+    }
+
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+
+
     return(
       <header id="header" class="fixed-top back">
       <div class="container d-flex align-items-center justify-content-lg-between">

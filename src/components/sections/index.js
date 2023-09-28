@@ -43,6 +43,54 @@ export default function Section(){
                     </Grid>
                 </div>
             </section>
+
+            <section id="services" class="services marginMain fontMain conteiner">
+                <div >
+                    <div class="section-title">
+                    <h2>Serviços</h2>
+                    <p>Veja nossos Serviços</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" >
+                            <div class="icon-box">
+                            <h4><a href="">Cortes</a></h4>
+                            <p>Um corte de cabelo que realça sua aparência e estilo, feito por nossos especialistas em barbearia.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                            <div class="icon-box">
+                            <h4><a href="">Escova</a></h4>
+                            <p>Experimente a transformação completa com o nosso serviço de escova profissional.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" >
+                            <div class="icon-box">
+                            <h4><a href="">Dia do noivo</a></h4>
+                            <p>Um momento exclusivo de relaxamento e cuidados personalizados.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" >
+                            <div class="icon-box">
+                            <h4><a href="">Tratamento Capilar</a></h4>
+                            <p>Um tratamento que revitaliza e nutre o couro cabeludo, deixando o cabelo mais saudável e brilhante.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                            <div class="icon-box">
+                            <h4><a href="">Depilação Facial</a></h4>
+                            <p>Remoção de pelos faciais indesejados para um rosto limpo e suave.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" >
+                            <div class="icon-box">
+                            <h4><a href="">Massagem Relaxante</a></h4>
+                            <p>Uma massagem relaxante para aliviar o estresse e proporcionar um momento de tranquilidade durante sua visita.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
         </main>
         
     )
