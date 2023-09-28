@@ -1,8 +1,6 @@
 # Design appliation
-<video autoplay loop>
-  <source src="assents/images/video/videoAppBarber.mp4" type="video/mp4">
-</video>
-
+<p>first part of the design finished</p>
+<img src="https://github.com/Vanessa-Bertoldo/site_react/blob/main/assets/images/gifApp.gif" alt="GIF application" height="100%">
 
 # Getting Started with Create React App
 
