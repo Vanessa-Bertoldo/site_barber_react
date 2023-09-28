@@ -7,7 +7,7 @@ export default function Header(){
       <header id="header" class="fixed-top back">
       <div class="container d-flex align-items-center justify-content-lg-between">
   
-        <h1 class="logo me-auto me-lg-0"><a href="index.html">Barber<span>.</span></a></h1>
+        <h1 class="logo me-auto me-lg-0"><a href="index.html">B<span>.</span>M<span>.</span></a></h1>
     
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
