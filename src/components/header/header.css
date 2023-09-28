@@ -12,6 +12,12 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+  .order-lg-0 {
+    order: 0 !important;
+  }
+  .margin30{
+    margin-right: 30px !important;
+  }
 
 a {
   color: #517fff;
@@ -314,7 +320,15 @@ h6 {
   line-height: 0;
   transition: 0.5s;
 }
-
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
