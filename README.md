@@ -1,3 +1,5 @@
+<p>A website built for a fictional barbershop with the purpose of reinforcing knowledge in CSS.</p>
+
 # Design appliation
 <p>first part of the design finished</p>
 <img src="https://github.com/Vanessa-Bertoldo/site_react/blob/main/assets/images/gifApp.gif" alt="GIF application" height="100%">
